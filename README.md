@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
-<h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
+<h1>Deployed Cloud-Based On-Premises Active Directory (Azure)</h1>
 This tutorial illustrates the process of installing Active Directory through Azure. This forms the basis for upcoming labs. Utilizing two Azure VMs on the same virtual network, this lab centers on configuring one VM as the domain controller. The second VM will serve as a client, joining in a subsequent lab.<br />
 
 
