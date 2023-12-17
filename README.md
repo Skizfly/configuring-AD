@@ -48,13 +48,14 @@ Following the static IP configuration, proceed to log in to the client VM and ch
 </p>
 <br />
 
-![image](https://github.com/Skizfly/configuring-AD/assets/153954157/f74fcfa3-4e92-4f88-b5c5-340330696112)
-
+![Capture](https://github.com/Skizfly/configuring-AD/assets/153954157/d31420cd-66d0-4348-83b8-8a7f8cb92525)
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Now, proceed with installing Active Directory on the domain controller VM. In Server Manager, select "Add Roles and Features" and proceed. Verify the private IP address of the domain controller VM. In the Server Roles tab, choose "Active Directory Domain Services," add features, then click "Next" and "Install." Subsequently, promote the server to a domain controller. In Server Manager, address the warning sign in the top right corner, select "Promote this server to a domain controller." Opt for "Add a new forest" and define a domain name (e.g., ernestotest.com). Set a domain password and click "Next" on each screen before selecting "Install."
+Now, proceed with installing Active Directory on the domain controller VM. In Server Manager, select "Add Roles and Features" and proceed. Verify the private IP address of the domain controller VM. In the Server Roles tab, choose "Active Directory Domain Services," add features, then click "Next" and "Install." Subsequently, promote the server to a domain controller. In Server Manager, address the warning sign in the top right corner, select "Promote this server to a domain controller." Opt for "Add a new forest" and define a domain name (e.g., lyanceytest.com). Set a domain password and click "Next" on each screen before selecting "Install."
 </p>
 <br />
+
+<h2>A crucial point to consider</h2>
+Upon relogging into the domain controller VM via Remote Desktop Connection, ensure logging in within the context of the domain. Input the domain path followed by the username, like mydomain.com\labuser. For instance, in my scenario, it is lyanceytest.com\labuser. With Active Directory installed, future configurations can be applied in subsequent labs, and the client VM will seamlessly join the created domain.
